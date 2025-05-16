@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Ramayana Translator & Reader</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-image: url('images/shree-ram-tl07m4vrcoichz7t.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.3);
+      min-height: 100vh;
+      padding: 50px 20px;
+    }
+
+    .contact-container {
+      width: 600px;
+      margin: 0 auto;
+      padding: 30px 40px;
+      box-shadow: 0px  0px 10px 3px black;
+      border-radius: 15px;
+    }
+
+    h1 {
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    }
+
+    .btn-submit {
+      width: 100%;
+    }
+
+    .alert-success {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+        <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm px-3">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold fs-3 text-white " style="text-shadow: 2px 2px 5px black;" href="index.html">📖 Ramayan </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="#category">Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="about.html" target="_self">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="#feedback">Feedback</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="overlay">
+
+   
+    <div class="container contact-container mt-5">
+       <h1 class="text-center mb-3 text-white ">📬 Contact Us</h1>
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name *</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address *</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message *</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+      </form>
+
+      <div class="alert alert-success mt-3" id="successMessage">
+        Thank you for reaching out! We will get back to you shortly.
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center text-white py-4 my-5" ">
+    <div>
+      <p class="mb-2">Developed with ❤️ by <strong>Jitendra Kumar Maurya</strong></p>
+      <div class="mb-3">
+        <a href="https://github.com/jite2005/" target="_blank" class="text-white mx-2" title="GitHub">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/jitendra-kumar-maurya-a3400824a" target="_blank" class="text-white mx-2" title="LinkedIn">
+          <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://jite2005.github.io/portfolio2nd/" target="_blank" class="text-white mx-2" title="Portfolio">
+          <i class="bi bi-amd"></i> Portfolio
+        </a>
+      </div>
+      <small>© <span id="year"></span> Ramayana Translator & Reader. All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Year auto update
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Contact form logic
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (name && email && message) {
+        // You can integrate EmailJS, Formspree, etc. here
+        document.getElementById("successMessage").style.display = "block";
+        this.reset();
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
