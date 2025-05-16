@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const playlistData = [
     {
-      image: "../images/baalkand.jpg",
+      image: "./images/baalkand.jpg",
       heading: "Bala Kanda",
       title: "The childhood of Lord Rama",
       date: "2024-03-01",
