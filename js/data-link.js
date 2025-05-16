@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       image: "../images/Kishkindha Kanda.webp",
-      heading: "Kishkindha Kanda",
+      heading: "Kishkindha-Kanda",
       title: "Alliance with Hanuman and Sugriva",
       date: "2024-03-15",
       link: "./veiw-page.html"
