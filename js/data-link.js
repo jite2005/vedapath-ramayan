@@ -8,35 +8,35 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "./veiw-page.html"
     },
     {
-      image: "../images/ayodhyakand.jpg",
+      image: "./images/ayodhyakand.jpg",
       heading: "Ayodhya Kanda",
       title: "Rama's departure from Ayodhya",
       date: "2024-03-05",
       link: "./veiw-page.html"
     },
     {
-      image: "../images/Aranya Kanda.jpg",
+      image: "./images/Aranya Kanda.jpg",
       heading: "Aranya Kanda",
       title: "Life in the forest and Sita's abduction",
       date: "2024-03-10",
       link: "./veiw-page.html"
     },
     {
-      image: "../images/Kishkindha Kanda.webp",
+      image: "./images/Kishkindha Kanda.webp",
       heading: "Kishkindha-Kanda",
       title: "Alliance with Hanuman and Sugriva",
       date: "2024-03-15",
       link: "./veiw-page.html"
     },
     {
-      image: "../images/Sundara Kanda.jpg",
+      image: "./images/Sundara Kanda.jpg",
       heading: "Sundara Kanda",
       title: "Hanuman's leap and search for Sita",
       date: "2024-03-20",
       link: "./veiw-page.html"
     },
     {
-      image: "../images/Yuddha Kanda.jpg",
+      image: "./images/Yuddha Kanda.jpg",
       heading: "Yuddha Kanda",
       title: "War with Ravana and victory",
       date: "2024-03-25",
